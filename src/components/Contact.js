@@ -14,7 +14,6 @@ export const Contact = () => {
                         <Row>
                             <Col size={12} className="px-1">
                                 <div className="contact-bx">
-                                    <h5>Alamat : Komplek DKI Blok R No.5, RT.7/RW.4, Joglo, Kec. Kembangan, Kota Jakarta Barat</h5>
                                     <br/>
                                     <h5>Gmail : ilhamalfatich@gmail.com</h5>
                                     <br/>
