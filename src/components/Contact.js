@@ -14,7 +14,10 @@ export const Contact = () => {
                         <Row>
                             <Col size={12} className="px-1">
                                 <div className="contact-bx">
+<<<<<<< Updated upstream
                                     <br/>
+=======
+>>>>>>> Stashed changes
                                     <h5>Gmail : ilhamalfatich@gmail.com</h5>
                                     <br/>
                                     <h5>HandPhone Number : 085694087537</h5>
