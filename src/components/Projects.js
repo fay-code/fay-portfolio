@@ -3,6 +3,14 @@ import { ProjectCard } from "./ProjectCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
 import projImg3 from "../assets/img/project-img3.png";
+import projImg4 from "../assets/img/project-img4.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
+import projImg9 from "../assets/img/project-img9.png";
+import projImg10 from "../assets/img/project-img10.png";
+import projImg11 from "../assets/img/project-img11.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -10,34 +18,85 @@ import TrackVisibility from "react-on-screen";
 export const Projects = () => {
     const projects = [
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Macbook App",
+          description: "Design using figma",
           imgUrl: projImg1,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Neuroprote Website",
+          description: "Home Page Design using figma",
           imgUrl: projImg2,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
+          title: "Neuroprote Website",
+          description: "Project Page Design using figma",
           imgUrl: projImg3,
         },
+    ];
+
+    const projects2 = [
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg1,
+            title: "Neuroprote Website",
+            description: "Home Page",
+            imgUrl: projImg4,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg2,
+            title: "Neuroprote Website",
+            description: "How We Work Page",
+            imgUrl: projImg5,
         },
         {
-          title: "Business Startup",
-          description: "Design & Development",
-          imgUrl: projImg3,
+            title: "Neuroprote Website",
+            description: "Contact Page",
+            imgUrl: projImg6,
+        },
+        {
+            title: "PDRI Website",
+            description: "Dashboard Admin page",
+            imgUrl: projImg7,
+        },
+        {
+            title: "PDRI Website",
+            description: "Data Hunian page",
+            imgUrl: projImg8,
+        },
+        {
+            title: "Neuroprote Website",
+            description: "Data Iuran page",
+            imgUrl: projImg9,
+        },
+    ];
+
+    const projects3 = [
+        {
+            title: "Neuroprote",
+            description: "Logo for Neuroprote app",
+            imgUrl: projImg10,
+        },
+        {
+            title: "Reauton",
+            description: "Logo for Reauton app",
+            imgUrl: projImg11,
+        },
+        {
+            title: "Neuroprote Website",
+            description: "Contact Page",
+            imgUrl: projImg6,
+        },
+        {
+            title: "PDRI Website",
+            description: "Dashboard Admin page",
+            imgUrl: projImg7,
+        },
+        {
+            title: "PDRI Website",
+            description: "Data Hunian page",
+            imgUrl: projImg8,
+        },
+        {
+            title: "Neuroprote Website",
+            description: "Data Iuran page",
+            imgUrl: projImg9,
         },
     ];
 
@@ -50,20 +109,20 @@ export const Projects = () => {
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__zoomIn"  : ""}>
                             <h2>Projects</h2>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                            <p>List of projects that I made, including personal use and freelance work for clients</p>
                             </div>
                         }
                         </TrackVisibility>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                                 <Nav.Item>
-                                    <Nav.Link eventKey="first">Tab 1</Nav.Link>
+                                    <Nav.Link eventKey="first">Mockup Design</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="second">Tab 2</Nav.Link>
+                                    <Nav.Link eventKey="second">Website App Design</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey="third">Tab 3</Nav.Link>
+                                    <Nav.Link eventKey="third">Logo Design</Nav.Link>
                                 </Nav.Item>
                             </Nav>
                             <Tab.Content>
@@ -78,21 +137,43 @@ export const Projects = () => {
                                                     />
                                                     )
                                                 })
-                                            }
+                                        }
                                     </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="second">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                    <Row>
+                                        {
+                                            projects2.map((project, index) => {
+                                                return (
+                                                    <ProjectCard 
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                                    )
+                                                })
+                                        }
+                                    </Row>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey="third">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                                    <Row>
+                                        {
+                                            projects3.map((project, index) => {
+                                                return (
+                                                    <ProjectCard 
+                                                    key={index}
+                                                    {...project}
+                                                    />
+                                                    )
+                                                })
+                                        }
+                                    </Row>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Tab.Container>
                     </Col>
                 </Row>
             </Container>
-            <img className="background-image-right" src={colorSharp2}></img>
+            <img className="background-image-right" src={colorSharp2} alt="background"></img>
         </section>
     )
 }
