@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img-galaxy.png";
+import headerImg from "../assets/img/galaxysprite.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 

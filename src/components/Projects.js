@@ -11,6 +11,7 @@ import projImg8 from "../assets/img/project-img8.png";
 import projImg9 from "../assets/img/project-img9.png";
 import projImg10 from "../assets/img/project-img10.png";
 import projImg11 from "../assets/img/project-img11.png";
+import projImg12 from "../assets/img/project-img12.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import "animate.css";
 import TrackVisibility from "react-on-screen";
@@ -61,7 +62,7 @@ export const Projects = () => {
             imgUrl: projImg8,
         },
         {
-            title: "Neuroprote Website",
+            title: "PDRI Website",
             description: "Data Iuran page",
             imgUrl: projImg9,
         },
@@ -79,24 +80,9 @@ export const Projects = () => {
             imgUrl: projImg11,
         },
         {
-            title: "Neuroprote Website",
-            description: "Contact Page",
-            imgUrl: projImg6,
-        },
-        {
-            title: "PDRI Website",
-            description: "Dashboard Admin page",
-            imgUrl: projImg7,
-        },
-        {
-            title: "PDRI Website",
-            description: "Data Hunian page",
-            imgUrl: projImg8,
-        },
-        {
-            title: "Neuroprote Website",
-            description: "Data Iuran page",
-            imgUrl: projImg9,
+            title: "Logo",
+            description: "Logo for Tech app",
+            imgUrl: projImg12,
         },
     ];
 
