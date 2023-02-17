@@ -67,7 +67,7 @@ export const Banner = () => {
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn"  : ""}>
-                                    <img src={headerImg} alt="Header Image"/>
+                                    <img src={headerImg} alt="Header Galaxy"/>
                                 </div>
                             }
                         </TrackVisibility>
