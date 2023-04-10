@@ -52,18 +52,18 @@ export const Projects = () => {
             imgUrl: projImg6,
         },
         {
-            title: "PDRI Website",
-            description: "Dashboard Admin page",
+            title: "Reauton Website",
+            description: "Dashboard page",
             imgUrl: projImg7,
         },
         {
-            title: "PDRI Website",
-            description: "Data Hunian page",
+            title: "Reauton Website",
+            description: "Checkout page",
             imgUrl: projImg8,
         },
         {
-            title: "PDRI Website",
-            description: "Data Iuran page",
+            title: "Reauton Website",
+            description: "Cart page",
             imgUrl: projImg9,
         },
     ];
